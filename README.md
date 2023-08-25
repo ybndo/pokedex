@@ -1,1 +1,3 @@
-# Trilha JS Developer - Pokedex
+# 👾 Pokedex
+
+A Pokedex made with PokeApi
