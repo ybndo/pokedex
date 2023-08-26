@@ -189,9 +189,10 @@
 
 /* JS Styles */
 
+/* Pokemon Aberto */
+
 .openedPokemon {
     /* transition: 2s; */
-    flex-direction: row;
     height: 500px;
     grid-column: 1 / 2;
     display: block;
@@ -199,23 +200,23 @@
     /* transition: 2s; */
 }
 
+.openedPokemon header {
+    text-align: center;
+}
+
 .openedPokemon .name {
     /* transition: 2s; */
-    display: block;
-    float: left;
-    width: 60%;
     font-size: 2rem;
     text-align: left;
 }
 
 .openedPokemon .number {
     /* transition: 2s; */
-    display: block;
-    width: 40%;
     font-size: 2rem;
     text-align: right;
-    float: left;
 }
+
+/* Detalhes do Pokemon  */
 
 .openedPokemon .detail {
     /* transition: 2s; */
@@ -223,7 +224,6 @@
     align-items: stretch;
     width: 100%;
     margin-top: 80px;
-    border: 1px solid cyan;
 }
 
 .openedPokemon .detail img {
@@ -244,6 +244,49 @@
 .openedPokemon .detail .types .type {
     width: 80%;
     margin: 10px auto;
+}
+
+.openedPokemon .detail-left { 
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Características Físicas */
+
+.openedPokemon .detail-left .infoUl {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.openedPokemon .detail-left .infoUl li {
+    margin: 10px 0;
+}
+
+/* Detalhes lado Direito */
+
+.openedPokemon .detail-right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.openedPokemon .detail-right .progress-bars {
+    justify-self: flex-end;
+    margin-top: 70px;
+}
+
+.openedPokemon .detail-right .progress-bars label {  
+    display: block;
+    width: 100%;
+}
+
+.clear {
+    clear: both;
 }
 
 @media screen and (min-width: 380px) {
@@ -291,55 +334,21 @@
     }
 
     .openedPokemon {
-        flex-direction: row;
         height: 650px;
         grid-column: 1 / 5;
     }
 
-    .openedPokemon .detail img {
+    /* .openedPokemon .detail img {
         align-self: flex-end;
         max-width: 400px;
         height: 400px;
         border: 20px solid #00000011;
     }
 
-}
+    .openedPokemon .progress-bars {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }  */
 
-.openedPokemon .divTypes { 
-    width: 50%;
-    border: 1px solid red;
-}
-
-
-.openedPokemon .infoUl {
-    padding: 0;
-    margin: 0;
-
-    margin-top: 50px;
-    list-style: none;
-    display: block;
-}
-
-.openedPokemon .detail-right {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 50%;
-    border: 1px solid red;
-
-}
-
-.progress-bars {
-    justify-self: flex-end;
-    margin-top: 70px;
-}
-
-.progress-bars label {  
-    display: block;
-    width: 100%;
-}
-
-.clear {
-    clear: both;
 }
