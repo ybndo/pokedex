@@ -45,10 +45,17 @@ loadMoreButton.addEventListener('click', () => {
     }
 })
 
-const htmlBackup
+// const cssBackup
 
 function showPokemonDetails(pokemonId) {
     var liPokemon = document.getElementById("num" + pokemonId)
-    liPokemon.style.height = "500px"
-    liPokemon.style.gridColumn = "1/5"
+    const liPokemonAttributes = liPokemon.getAttribute("class").split(' ')
+    var indexAberto = liPokemonAttributes.indexOf('openedPokemon')
+    if ( indexAberto != -1) {
+        liPokemonAttributes.pop(indexAberto)
+        liPokemon.setAttribute("class", liPokemonAttributes.join(' '))
+    } else {
+        liPokemon.getAttribute("class")
+        liPokemon.setAttribute("class", liPokemon.getAttribute("class") + " openedPokemon")
+    }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<htm>
 
 <head>
     <meta charset="UTF-8">
@@ -27,6 +27,52 @@
         <h1>Pokedex</h1>
 
         <ol id="pokemonList" class="pokemons">
+            <li class="pokemon grass openedPokemon" id="num1" onclick="showPokemonDetails(1)">
+                <span class="number">#1</span>
+                <span class="name">bulbasaur</span>
+                <div class="detail">
+                    <div class="divTypes">
+                        <ol class="types">
+                            <li class="type grass">grass</li><li class="type poison">poison</li>
+                        </ol>
+                        <ul class="infoUl">
+                            <li>
+                                <span>Altura:</span> 7 ft
+                            </li>
+                            <li>
+                                <span>Peso:</span> 69 lbs
+                            </li>
+                            <li>
+                                <span>Habilidades:</span> "overgrow", "chlorophyll",
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="detail-right">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="bulbasaur">
+
+                        <div class="progress-bars">
+                            <div>
+                                <label for="hp1">HP</label>
+                                <progress id="hp1" class="statusProgressBar" value="45" max="200">45</progress>
+                                <label for="atk1">Attack</label>
+                                <progress id="atk1" class="statusProgressBar" value="49" max="200">49</progress>
+                                <label for="df1">Defense</label>
+                                <progress id="df1" class="statusProgressBar" value="49" max="200">49</progress>
+                            </div>
+                            <div>
+                                <label for="satk1">Special Attack</label>
+                                <progress id="satk1" class="statusProgressBar" value="65" max="200">65</progress>
+                                <label for="sdf1">Special Defense</label>
+                                <progress id="sdf1" class="statusProgressBar" value="65" max="200">65</progress>
+                                <label for="spd1">Speed</label>
+                                <progress id="spd1" class="statusProgressBar" value="45" max="200">45</progress>
+                            </div>
+                        </div>
+                    </div>
+    
+                   
+                </div>
+            </li>
             <!-- ..... Pokemons here ..... -->
         </ol>
 
