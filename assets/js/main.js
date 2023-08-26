@@ -48,7 +48,7 @@ loadMoreButton.addEventListener('click', () => {
 // const cssBackup
 
 function showPokemonDetails(pokemonId) {
-    var liPokemon = document.getElementById("num" + pokemonId)
+    const liPokemon = document.getElementById("num" + pokemonId)
     const liPokemonAttributes = liPokemon.getAttribute("class").split(' ')
     var indexAberto = liPokemonAttributes.indexOf('openedPokemon')
     if ( indexAberto != -1) {
