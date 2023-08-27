@@ -6,96 +6,6 @@
     list-style: none;
 }
 
-.normal {
-    background-color: #a6a877;
-    box-shadow: 5px 5px 10px #a6a877;
-}
-
-.grass {
-    background-color: #77c850;
-    box-shadow: 5px 5px 10px #77c850;
-}
-
-.fire {
-    background-color: #ee7f30;
-    box-shadow: 5px 5px 10px #ee7f30;
-}
-
-.water {
-    background-color: #678fee;
-    box-shadow: 5px 5px 10px #678fee;
-}
-
-.electric {
-    background-color: #f7cf2e;
-    box-shadow: 5px 5px 10px #f7cf2e;
-}
-
-.ice {
-    background-color: #98d5d7;
-    box-shadow: 5px 5px 10px #98d5d7;
-}
-
-.ground {
-    background-color: #dfbf69;
-    box-shadow: 5px 5px 10px #dfbf69;
-}
-
-.flying {
-    background-color: #a98ff0;
-    box-shadow: 5px 5px 10px #a98ff0;
-}
-
-.poison {
-    background-color: #a040a0;
-    box-shadow: 5px 5px 10px #a040a0;
-}
-
-.fighting {
-    background-color: #bf3029;
-    box-shadow: 5px 5px 10px #bf3029;
-}
-
-.psychic {
-    background-color: #f65687;
-    box-shadow: 5px 5px 10px #f65687;
-}
-
-.dark {
-    background-color: #725847;
-    box-shadow: 5px 5px 10px #725847;
-}
-
-.rock {
-    background-color: #b8a137;
-    box-shadow: 5px 5px 10px #b8a137;
-}
-
-.bug {
-    background-color: #a8b720;
-    box-shadow: 5px 5px 10px #a8b720;
-}
-
-.ghost {
-    background-color: #6e5896;
-    box-shadow: 5px 5px 10px #6e5896;
-}
-
-.steel {
-    background-color: #b9b7cf;
-    box-shadow: 5px 5px 10px #b9b7cf;
-}
-
-.dragon {
-    background-color: #6f38f6;
-    box-shadow: 5px 5px 10px #6f38f6;
-}
-
-.fairy {
-    background-color: #f9aec7;
-    box-shadow: 5px 5px 10px #f9aec7;
-}
-
 .pokemon {
     display: flex;
     height: 140px;
@@ -242,13 +152,18 @@
 }
 
 .openedPokemon .detail-left .infoUl .category {
-    background-color: rgba(31, 156, 0, 0.575);
+    filter: brightness(.87);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.247);
     padding: 5px;
     border-radius: 20px;
 }
 
 .openedPokemon .detail-left .infoUl .category-value {
     float: right;
+}
+
+.openedPokemon .detail-left .infoUl .category-value span {
+    text-transform: capitalize;
 }
 
 .pokemon .detail-right {
@@ -258,7 +173,7 @@
 }
 
 .openedPokemon .detail .detail-right .progress-bars {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
 }
 
@@ -282,6 +197,12 @@
         grid-column: 1 / 3;
     }
 
+    .pokemon .detail img {
+        max-width: 70px;
+        height: 70px;
+
+    }
+
 }
 
 @media screen and (min-width: 576px) {
@@ -292,6 +213,7 @@
     .openedPokemon {
         grid-column: 1 / 4;
         font-size: 1rem;
+        height: 564px;
     }
 
     .openedPokemon img {
